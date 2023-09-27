@@ -1,3 +1,76 @@
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    background-color: hsl(217, 19%, 24%);
+    width: 22em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.75em;
+}
+
+#results {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+#results p {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+#results h1 {
+    font-size: 0.7em;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 0.4em;
+}
+
+.btn {
+    background-image: url('images/icon-dice.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(150, 100%, 66%);
+    background-position: center;
+    background-size: 1.75em;
+    height: 5em;
+    width: 5em;
+    border: none;
+    border-radius: 5em;
+    position: relative;
+    bottom: -2.5em;
+}
+
+.btn:hover {
+    box-shadow: hsl(150, 100%, 66%) 0 0 2em;
+    transition: 100ms ease-out;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 40em;
+    }
+}
+
+@media (min-width: 1028px) {
+    .container {
+        width: 50em;
+    }
+}
+
 body {
     background-color: hsl(218, 23%, 16%);
     height: 100vh;
